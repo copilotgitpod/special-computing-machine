@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $(document).on('keypress', function (e) {
         if (e.which == 13) {
-            let url = `https://news-api-project-8401e868529d.herokuapp.com/api/news?api_key=4b1a0e44-0205-4ad8-9158-3c10c3e87ae9`
+            let url = `https://django-api24.vercel.app/api/news?api_key=django-insecure-=cldztbc4jg&xl0!x673!*v2_=p$$eu)=7*f#d0#zs$44xx-h^`
             async function mynews() {
                 let responce = await fetch(url)
                 let data = await responce.json()
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     $("h2").click(async function (e) {
         e.preventDefault();
-        let url = `https://news-api-project-8401e868529d.herokuapp.com/api/news?api_key=4b1a0e44-0205-4ad8-9158-3c10c3e87ae9`
+        let url = `https://django-api24.vercel.app/api/news?api_key=django-insecure-=cldztbc4jg&xl0!x673!*v2_=p$$eu)=7*f#d0#zs$44xx-h^`
 
             async function mynews() {
             let responce = await fetch(url);
@@ -44,7 +44,7 @@ $(document).ready(function () {
             if (Array.isArray(data.news)) {
                 data.news.forEach(item => {
                     const box = document.createElement('div');
-                    box.className = 'col-md.4';
+                    box.className = 'col-md-4';
                     box.innerHTML = `
                     <div class="box">
                         <div class="imgbox">
